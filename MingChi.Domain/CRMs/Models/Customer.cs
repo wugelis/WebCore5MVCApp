@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
@@ -12,7 +13,7 @@ namespace MingChi.Domain.CRMs.Models
             CustomerCustomerDemos = new HashSet<CustomerCustomerDemo>();
             Orders = new HashSet<Order>();
         }
-
+        [Key]
         public string CustomerId { get; set; }
         public string CompanyName { get; set; }
         public string ContactName { get; set; }

@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace MingChi.NorApp.CRM.Repositories
 {
-    public interface IApplicationDbContext
+    public interface ICustomerRepository
     {
-        DbSet<Customer> Customers { get; set; }
-
-        int SaveChanges();
+        IEnumerable<Customer> GetCustomers();
+        void Add(Customer customer);
+        void Edit(Customer customer);
     }
 }

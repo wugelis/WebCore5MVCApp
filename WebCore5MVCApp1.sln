@@ -13,11 +13,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MingChi.NorApp", "MingChi.NorApp\MingChi.NorApp.csproj", "{29953AD9-73B8-4273-AB86-D4AC363A383C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MingChi.Infrastructure", "MingChi.Infrastructure\MingChi.Infrastructure.csproj", "{BD320E76-BE18-4414-8495-6E45FC4A1D15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MingChi.Infrastructure", "MingChi.Infrastructure\MingChi.Infrastructure.csproj", "{BD320E76-BE18-4414-8495-6E45FC4A1D15}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{98C43098-8353-42A4-8116-930599978BE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MingChi.Domain", "MingChi.Domain\MingChi.Domain.csproj", "{5B20FAB2-4AB4-441B-88F7-703FE22E5760}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MingChi.Domain", "MingChi.Domain\MingChi.Domain.csproj", "{5B20FAB2-4AB4-441B-88F7-703FE22E5760}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9913F2FF-2997-42F0-BC04-DEFEFA190545}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

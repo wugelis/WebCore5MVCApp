@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MingChi.DataAccess.Models;
 using MingChi.Infrastructure.Configuration;
+using MingChi.Infrastructure.Persistence;
 using MingChi.NorApp.CRM;
 using MingChi.NorApp.CRM.Repositories;
 
@@ -34,8 +35,12 @@ namespace WebCore5MVCApp1
 
             services.AddScoped<IJsonConfigurationBuilder, JsonConfigurationBuilder>();
 
-            services.AddScoped<IApplicationDbContext, ApplicationDbContext>(service => 
-                new ApplicationDbContext(Configuration.GetConnectionString("Conn")));
+            services.AddSingleton<IApplicationDbContext, ApplicationDbContext>();
+
+            services.AddScoped<ICustomerRepository, CustomerRepository>();
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            //services.AddScoped<IUnitOfWork, UnitOfWork>(options => new UnitOfWork(new ApplicationDbContext(Configuration.GetConnectionString("Conn"))));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
